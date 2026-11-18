@@ -1,0 +1,18 @@
+@baseUrl = http://localhost:5128
+
+### Create a disbursement order
+POST {{baseUrl}}/api/v1/disbursement-orders
+Accept: application/json
+Content-Type: application/json
+Accept-Language: en-US
+
+{
+  "orderTrackingCode": "7a3e6d4c-6c6e-4f7e-a3b8-1a2b3c4d5e6f",
+  "affiliateStoreId": "4d7c3b2a-1f0e-4d5c-9a8b-7c6d5e4f3a2b",
+  "scheduledFrom": "2026-12-01",
+  "scheduledTo": "2026-12-10",
+  "transferCapAmount": 2500.00,
+  "transferCapCurrencyCode": "PEN",
+  "user": "operator01",
+  "remarks": "December settlement"
+}
